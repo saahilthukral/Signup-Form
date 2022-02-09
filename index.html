@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Service</title>
+    
+</head>
+<link rel="stylesheet" href="./index.css">
+
+<body>
+    
+    <div id = "container">
+        <div id = "left"></div>
+        <div id = "right">
+            <header><p>This is not a real online service! Please do not enter your personal details. This is just a front-end mock up of a Sign Up page, as part of my learning at the Odin Project</p></header>
+            <main>
+                <div id = "error"></div>
+                <form action="#" method="post">
+                <div id = "form-container">
+                    <legend>Let's do this</legend>
+                    <div>
+                    <div class="form">
+                        <label for="first-name">First Name<span>*</span></label>
+                        <input id = "fname" name = "first name" type="text" autocomplete=off placeholder="First Name" pattern="[a-zA-Z]+">
+                        
+                    </div>  
+                    <div class="form">
+
+                        <label for="Last Name">Last Name<span>*</span></label><input id = "sname" type="text" placeholder="Last Name" autocomplete=off pattern="[a-zA-Z]+">
+                    </div>
+                </div>
+                    
+                 <div><div class="form">
+                    <label for="Email">Email <span>*</span></label><input id = "email" type="email" placeholder="abc@xyz.com"  autocomplete=off name = "email">
+                    </div>
+
+                    <div class="form">
+                    <label for="Phone">Phone Number <span>*</span></label><input id ="phone" type="text" placeholder="(123)-456-7890" minlength="14" maxlength="14" autocomplete=off pattern="\d+">
+                    </div></div>   
+                    
+                    <div>
+                        <div class="form">
+                            <label for="Password">Password <span>*</span></label><input id = "password" type="password" placeholder="********" minlength="8"
+                            autocomplete=off >
+                        </div>
+                        <div class="form">
+                        <label for="Confirm Password">Confirm Password <span>*</span></label><input id = "confirmPass" type="password" minlength="8" placeholder="********"
+                        autocomplete=off>
+                        </div>
+                    </div>
+                    
+                </div>
+                <button type = "submit">Sign Up</button>
+                <p>Already have an account <a href="#">Log In</a></p>
+            </form>
+
+  
+            
+            </main>
+            <footer></footer>
+        </div>
+        
+    </div>
+</body>
+<script src = "./index.js"></script>
+</html>
